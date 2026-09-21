@@ -4,7 +4,7 @@ DB_HOST = "localhost"
 DB_PORT = 5432
 DB_NAME = "employee_management_system"
 DB_USER = "postgres"
-DB_PASSWORD = "3748"
+DB_PASSWORD = "your_password_here"  # Replace with your actual password
 
 connection_string = (
     f"postgresql://{DB_USER}:{DB_PASSWORD}"
