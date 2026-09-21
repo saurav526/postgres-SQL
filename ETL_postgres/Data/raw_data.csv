@@ -1,0 +1,17 @@
+customer_id,name,email,age,city,salary,join_date
+101, Rahul Sharma ,RAHUL@GMAIL.COM,25,Pune,45000,2024-01-15
+102,priya patil, priya@gmail.com ,30,Mumbai,55000,2024-02-20
+103,AMIT KUMAR,amit@gmail.com,28, pune ,50000,2024-03-10
+104, Sneha Joshi,sneha@gmail.com,35,Nashik,65000,2024-04-05
+105,Rohit Singh,rohit@gmail.com,abc,Mumbai,70000,2024-05-12
+106,Neha Verma,neha@gmail.com,29,Delhi,48000,2024-06-18
+107,Arjun Mehta,arjun@gmail.com,,Pune,52000,2024-07-22
+108,Pooja Shah,POOJA@GMAIL.COM,27,MUMBAI,58000,2024-08-14
+109,Karan Gupta,karan@gmail.com,31,Delhi,60000,2024-09-01
+110,Meena Rao,meena@gmail.com,26,Pune,47000,2024-10-11
+111,Anjali Desai,anjali@gmail.com,24,Bangalore,42000,2024-11-05
+112,Rajesh Nair,rajesh@gmail.com,33,Chennai,55000,2024-12-01
+113,Sunita Reddy,sunita@gmail.com,29,Hyderabad,50000,2024-12-15
+114,Deepak Joshi,deepak@gmail.com,40,Delhi,65000,2024-12-20
+115,Manish Kumar,manish@gmail.com,35,Jaipur,55000,2024-12-25
+116,Anita Sharma,anita@gmail.com,28,Mumbai,50000,2024-12-30
