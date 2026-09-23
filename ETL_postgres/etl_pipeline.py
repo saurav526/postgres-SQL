@@ -52,7 +52,6 @@ def transform_data(df):
         f"Duplicates removed: "
         f"{before_duplicates - after_duplicates}"
     )
-
     df.columns = (
         df.columns
         .str.strip()
