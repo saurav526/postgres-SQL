@@ -9,7 +9,7 @@ DB_CONFIG = {
     "port": 5432,
     "database": "etl_database",
     "user": "postgres",
-    "password": "3748"  # Replace with your actual password
+    "password": "3748"  
 }
 
 CSV_FILE = Path("C:\\Users\\Asus\\OneDrive\\Desktop\\coding file\\postgres SQL\\ETL_postgres\\Data\\raw_data.csv")
@@ -383,4 +383,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-# complete atl pipeline
