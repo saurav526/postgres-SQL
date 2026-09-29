@@ -4,8 +4,7 @@ DB_HOST = "localhost"
 DB_PORT = 5432
 DB_NAME = "employee_management_system"
 DB_USER = "postgres"
-DB_PASSWORD = "3748"  # Replace with your actual password
-
+DB_PASSWORD = "3748" 
 connection_string = (
     f"postgresql://{DB_USER}:{DB_PASSWORD}"
     f"@{DB_HOST}:{DB_PORT}/{DB_NAME}"
@@ -27,7 +26,6 @@ except Exception as e:
 try:
     with psycopg2.connect(connection_string) as conn:
         with conn.cursor() as cursor:
-            # SQL to create all tables
             create_tables_sql = """
             CREATE TABLE IF NOT EXISTS users (
                 id SERIAL PRIMARY KEY,
@@ -73,7 +71,6 @@ except Exception as e:
 try:
     with psycopg2.connect(connection_string) as conn:
         with conn.cursor() as cursor:
-            # --- Insert Data into users table ---
             insert_query_users = """
             INSERT INTO users (name, email, age)
             VALUES (%s, %s, %s)
@@ -88,7 +85,6 @@ try:
                 cursor.execute(insert_query_users, user)
             print("Sample data inserted into 'users' table.")
 
-            # --- Insert Data into employees table ---
             insert_query_employees = """
             INSERT INTO employees (name, email, age)
             VALUES (%s, %s, %s)
@@ -103,7 +99,6 @@ try:
                 cursor.execute(insert_query_employees, employee)
             print("Sample data inserted into 'employees' table.")
 
-            # --- Insert Data into departments table ---
             insert_query_departments = """
             INSERT INTO departments (name, description)
             VALUES (%s, %s)
@@ -118,7 +113,6 @@ try:
                 cursor.execute(insert_query_departments, department)
             print("Sample data inserted into 'departments' table.")
 
-            # --- Insert Data into projects table ---
             insert_query_projects = """
             INSERT INTO projects (name, description)
             VALUES (%s, %s)
@@ -133,7 +127,6 @@ try:
                 cursor.execute(insert_query_projects, project)
             print("Sample data inserted into 'projects' table.")
 
-            # --- Insert Data into tasks table ---
             insert_query_tasks = """
             INSERT INTO tasks (name, description)
             VALUES (%s, %s)
