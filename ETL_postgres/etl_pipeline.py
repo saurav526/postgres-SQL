@@ -9,7 +9,7 @@ DB_CONFIG = {
     "port": 5432,
     "database": "etl_database",
     "user": "postgres",
-    "password": "your_password_here"  # Replace with your actual password
+    "password": "3748"  # Replace with your actual password
 }
 
 CSV_FILE = Path("C:\\Users\\Asus\\OneDrive\\Desktop\\coding file\\postgres SQL\\ETL_postgres\\Data\\raw_data.csv")
