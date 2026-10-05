@@ -38,7 +38,7 @@ def initialize_database():
             "role": "Administrator",
             "created_at": datetime.now()
         })
-
+# Authenticate user credentials
 def authenticate(username, password):
     return users.find_one({
         "username": username.strip(),
