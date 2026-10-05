@@ -2,7 +2,7 @@ from pymongo import MongoClient
 from pymongo.errors import ConnectionFailure
 from datetime import datetime
 import hashlib
-
+# Initialize MongoDB connection
 MONGO_URI = "mongodb://localhost:27017/"
 DB_NAME = "hospital_management"
 
@@ -14,7 +14,7 @@ except ConnectionFailure as exc:
     raise RuntimeError(
         "Could not connect to MongoDB. Start MongoDB and run the application again."
     ) from exc
-
+# Access collections
 users = db["users"]
 patients = db["patients"]
 doctors = db["doctors"]
@@ -23,7 +23,7 @@ bills = db["bills"]
 
 def hash_password(password):
     return hashlib.sha256(password.encode("utf-8")).hexdigest()
-
+# Initialize the database with default admin user and indexes
 def initialize_database():
     users.create_index("username", unique=True)
     patients.create_index("patient_id", unique=True)
