@@ -200,7 +200,7 @@ class HospitalApp(tk.Tk):
             ))
 
         btns = tk.Frame(body, bg="#f4f7fb")
-        btns.pack(fill="x", pady=12)
+        btns.pack(fill="x", pady=15)
         ttk.Button(btns, text="Edit Selected",
                    command=lambda: self.edit_patient(tree)).pack(side="left")
         ttk.Button(btns, text="Delete Selected",
@@ -481,7 +481,8 @@ class HospitalApp(tk.Tk):
     def form_window(self, title, fields, save_callback):
         win = tk.Toplevel(self)
         win.title(title)
-        win.geometry("480x560")
+        height = min(700, max(560, 180 + len(fields) * 70))
+        win.geometry(f"480x{height}")
         win.resizable(False, False)
         win.configure(bg="white")
         win.transient(self)
