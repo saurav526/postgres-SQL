@@ -8,7 +8,7 @@ from pyspark.ml.feature import Imputer
 # 1. Create Spark Session
 spark = SparkSession.builder \
     .appName("DataFrame_Manipulation_and_Cleaning") \
-    .master("local[*]") \
+    .master("local[8501]") \
     .getOrCreate()
 
 spark.sparkContext.setLogLevel("ERROR")
