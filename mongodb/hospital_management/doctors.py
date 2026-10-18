@@ -1,6 +1,4 @@
 from database import doctors_collection
-
-
 def add_doctor():
     print("\n========== ADD DOCTOR ==========")
 
