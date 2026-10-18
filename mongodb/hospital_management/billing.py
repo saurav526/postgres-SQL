@@ -1,7 +1,5 @@
 from database import bills_collection
 from database import patients_collection
-
-
 def create_bill():
     print("\n========== CREATE BILL ==========")
 
